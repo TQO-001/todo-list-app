@@ -1,0 +1,66 @@
+:root {
+    --main-font: "Quicksand", sans-serif;
+    --secondary-font: "Orbitron", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+.todo {
+    margin: 1em 10em;
+}
+
+header, .container, .tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #333;
+    margin: 0.3em;
+}
+
+.container {
+    flex-wrap: nowrap;
+    gap: 1em;
+    width: 100%;
+}
+
+    .container input {
+        font-size: 1.1em;
+        width: 75%;
+        height: 3rem;
+        padding: 0 1.5em;
+        border: 0.1em solid #555;
+        border-radius: 1em;
+        align-self: flex-start;
+        font-family: var(--main-font);
+    }
+
+    .add-task {
+        font-size: 1.1em;
+        width: auto;
+        color: #fff;
+        height: 3rem;
+        background-color: #333;
+        border: none;
+        border-radius: 1em;
+        padding: 0.8em;
+        align-self: flex-end;
+    }
+
+
+.tasks {
+    width: 100%;
+    min-height: 100vh;
+    border: 0.1em solid #333;
+    border-radius: 1em;
+    margin: 1.5em 0;
+}
